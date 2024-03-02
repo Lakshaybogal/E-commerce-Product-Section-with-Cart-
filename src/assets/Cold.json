@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Iced Tea",
+    "price": 60,
+    "image": "https://img.freepik.com/free-photo/glass-foamy-cold-coffee-with-whipped-cream-chocolate-wooden-plate_114579-90914.jpg?w=1800&t=st=1709395206~exp=1709395806~hmac=8a7f5962b7afe2f0870f0aa8e7204ea55eebe8159e999ec66a7bc57718bf1534",
+    "category": "Cold"
+  },
+  {
+    "title": "Cold Coffee",
+    "price": 80,
+    "image": "https://img.freepik.com/free-photo/glass-foamy-cold-coffee-with-whipped-cream-chocolate-wooden-plate_114579-90914.jpg?w=1800&t=st=1709395206~exp=1709395806~hmac=8a7f5962b7afe2f0870f0aa8e7204ea55eebe8159e999ec66a7bc57718bf1534",
+    "category": "Cold"
+  },
+  {
+    "title": "Cold Dirnk",
+    "price": 70,
+    "image": "https://img.freepik.com/free-photo/glass-foamy-cold-coffee-with-whipped-cream-chocolate-wooden-plate_114579-90914.jpg?w=1800&t=st=1709395206~exp=1709395806~hmac=8a7f5962b7afe2f0870f0aa8e7204ea55eebe8159e999ec66a7bc57718bf1534",
+    "category": "Cold"
+  }
+]

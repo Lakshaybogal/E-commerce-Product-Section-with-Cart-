@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Coffee",
+    "price": 50,
+    "image": "https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg?1&w=1800&t=st=1709371026~exp=1709371626~hmac=c6750272181b92603d321995d4bea72e3afd8c9695fc040d5a5ea569565bf105",
+    "category": "Hot"
+  },
+  {
+    "title": "Hot Chocolate",
+    "price": 119,
+    "image": "https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg?1&w=1800&t=st=1709371026~exp=1709371626~hmac=c6750272181b92603d321995d4bea72e3afd8c9695fc040d5a5ea569565bf105",
+    "category": "Hot"
+  },
+  {
+    "title": "Latte",
+    "price": 159,
+    "image": "https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg?1&w=1800&t=st=1709371026~exp=1709371626~hmac=c6750272181b92603d321995d4bea72e3afd8c9695fc040d5a5ea569565bf105",
+    "category": "Hot"
+  }
+]

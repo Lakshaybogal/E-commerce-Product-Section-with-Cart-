@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.category {
+  text-decoration: underline #E5E8EB 6px;
+  text-underline-offset: 18px;
+
+}
+
+.active {
+  color: black;
+}

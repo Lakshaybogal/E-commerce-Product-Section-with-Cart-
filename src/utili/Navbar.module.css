@@ -1,0 +1,9 @@
+.searchBar {
+    background-color: #F5F2F0;
+    color: black;
+    width: 100%;
+}
+
+::placeholder {
+    color: #877363;
+}
