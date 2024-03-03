@@ -1,20 +1,20 @@
 [
   {
     "title": "Cookies",
-    "price": 3.99,
-    "image": "https://www.jiomart.com/images/product/original/491696351/lay-s-india-s-magic-masala-potato-chips-73-g-product-images-o491696351-p590122120-0-202307142034.jpg?im=Resize=(420,420)",
+    "price": 10,
+    "image": "https://www.freepnglogos.com/uploads/potato-chips-png/lays-potato-chips-png-image-purepng-transparent-4.png",
     "category": "Snacks"
   },
   {
     "title": "Potato Chips",
-    "price": 2.49,
-    "image": "https://www.jiomart.com/images/product/original/491696351/lay-s-india-s-magic-masala-potato-chips-73-g-product-images-o491696351-p590122120-0-202307142034.jpg?im=Resize=(420,420)",
+    "price": 20,
+    "image": "https://www.freepnglogos.com/uploads/potato-chips-png/lays-potato-chips-png-image-purepng-transparent-4.png",
     "category": "Snacks"
   },
   {
-    "title": "Granola Bars",
-    "price": 1.99,
-    "image": "https://www.jiomart.com/images/product/original/491696351/lay-s-india-s-magic-masala-potato-chips-73-g-product-images-o491696351-p590122120-0-202307142034.jpg?im=Resize=(420,420)",
+    "title": "Chocalate",
+    "price": 20,
+    "image": "https://www.freepnglogos.com/uploads/potato-chips-png/lays-potato-chips-png-image-purepng-transparent-4.png",
     "category": "Snacks"
   }
 ]

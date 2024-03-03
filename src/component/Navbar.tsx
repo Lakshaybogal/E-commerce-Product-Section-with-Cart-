@@ -1,39 +1,37 @@
 import React, { useState } from 'react';
-import { IoCartOutline, IoSearchOutline } from 'react-icons/io5';
+import { IoMenu, IoCloseSharp } from 'react-icons/io5';
 import styles from '../utili/Navbar.module.css';
-import CartSummary from './CartSummary';
 
-interface NavbarProps {
-
-    cart: { title: string; price: number; quantity: number }[];
-    setCart: React.Dispatch<React.SetStateAction<{ title: string; price: number; quantity: number }[]>>;
-    setTotalQuantityInCart: React.Dispatch<React.SetStateAction<number>>;
-    totalQuantityInCart: number;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ totalQuantityInCart, cart, setCart, setTotalQuantityInCart }) => {
-    const [isCartOpen, setIsCartOpen] = useState(false);
+const Navbar: React.FC = () => {
+    const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <nav className="flex flex-col justify-center items-center gap-6 pb-5">
-            <div className='flex items-center'>
-                <div className="pl-24 pr-14 md:pr-[155%]">
-                    <h1 className="text-3xl font-bold">QuickCafe</h1>
+        <nav className="flex flex-col items-center gap-6 md:p-5 p-2 md:sticky top-1 z-10 bg w-full drop-shadow-xl rounded-md m-1">
+            <div className='flex items-center justify-between'>
+                <div>
+                    <h1 className="md:text-5xl text-3xl font-bold pr-32 md:pr-0">QuickCafe</h1>
                 </div>
-                <div className='relative flex'>
-                    <span className='text-5xl'>
-                        <IoCartOutline onClick={() => setIsCartOpen(true)} />
+                {/* Show menu toggle button only for small screens */}
+                <p className="md:hidden" onClick={() => setShowMenu(!showMenu)}>
+                    <span className='text-3xl'>
+                        {showMenu ? <IoCloseSharp /> : <IoMenu />}
                     </span>
-                    <p className="text-xs absolute left-5 top-3">{totalQuantityInCart}</p>
+                </p>
+            </div>
+            {/* Menu items for mobile view */}
+            {showMenu && (
+                <div className='text-2xl font-bold flex flex-col justify-center items-center gap-3 z-20'>
+                    <p>Home</p>
+                    <p>Product</p>
+                    <p>Services</p>
                 </div>
+            )}
+            {/* Menu items for desktop view */}
+            <div className={`text-2xl font-bold hidden md:flex justify-center items-center gap-10 ${styles.navBar} py-2 rounded-lg`}>
+                <p>Home</p>
+                <p>Product</p>
+                <p>Services</p>
             </div>
-            <div className='flex items-center relative'>
-                <span className='absolute left-3 text-3xl primary-color'>
-                    <IoSearchOutline />
-                </span>
-                <input className={`${styles.searchBar} py-3 px-12 text-2xl rounded-lg w-[90vw] md:w-[85vw]`} type="text" placeholder='Search' />
-            </div>
-            {totalQuantityInCart > 0 && isCartOpen && <CartSummary cart={cart} setCart={setCart} closeCart={() => setIsCartOpen(false)} totalQuantityInCart={totalQuantityInCart} setTotalQuantityInCart={setTotalQuantityInCart} />}
         </nav>
     );
 };

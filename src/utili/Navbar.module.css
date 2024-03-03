@@ -1,9 +1,5 @@
-.searchBar {
-    background-color: #F5F2F0;
-    color: black;
+.navBar {
+    color: #F5F2F0;
+    background-color:  #877363;
     width: 100%;
-}
-
-::placeholder {
-    color: #877363;
 }
