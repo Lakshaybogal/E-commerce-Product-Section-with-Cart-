@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ totalQuantityInCart, cart, setCart, set
   const [isCartOpen, setIsCartOpen] = useState(false);
   return (
 
-    <footer className="flex flex-col sticky bottom-2 md:justify-center items-center ">
+    <footer className="flex flex-col sticky bottom-2 md:justify-center items-center m-4 ">
       {totalQuantityInCart > 0 && isCartOpen && <CartSummary cart={cart} setCart={setCart} closeCart={() => setIsCartOpen(false)} totalQuantityInCart={totalQuantityInCart} setTotalQuantityInCart={setTotalQuantityInCart} />}
       <h2 className='text-4xl font-bold py-2 px-8 rounded-full flex justify-center items-center Footer'
         onClick={() => setIsCartOpen(true)} >

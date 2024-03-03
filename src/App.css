@@ -6,12 +6,18 @@
 }
 
 
-.category {
-  text-decoration: underline #E5E8EB 6px;
-  text-underline-offset: 18px;
+.active {
+  color: #E5E0DB;
+  background-color: #877363;
 
 }
 
-.active {
-  color: black;
+.menu {
+  background-color: #E5E0DB;
+  color: #877363;
+}
+
+.menu:hover {
+  color: #E5E0DB;
+  background-color: #877363;
 }

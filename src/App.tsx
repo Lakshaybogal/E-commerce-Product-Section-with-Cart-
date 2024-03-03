@@ -25,9 +25,9 @@ const App: React.FC = () => {
     <div className="App flex flex-col items-center justify-center">
       <Navbar />
       <div className="container flex flex-col ">
-        <div className='flex text-xl font-bold primary-color gap-8 pb-4 pt-2 md:hidden sticky -top-1 z-10 md:static bg'>
+        <div className='flex text-xl font-bold gap-5 pb-4 pt-4 m-1 md:hidden sticky -top-1 z-20 md:static justify-center bg'>
           {Object.keys(Products).map((productType, index) => (
-            <div key={index} className={`category ${currProduct === productType ? 'active' : ''}`} onClick={() => setCurrProduct(productType)}>
+            <div key={index} className={`${currProduct === productType ? 'active' : 'menu'} py-2 px-5 rounded-3xl`} onClick={() => setCurrProduct(productType)}>
               {productType}
             </div>
           ))}
@@ -50,7 +50,7 @@ const App: React.FC = () => {
         <div className='md:flex flex-col hidden'>
           {Object.keys(Products).map((productType, index) => (
             <div key={index}>
-              <div className='category pb-4 text-2xl font-bold text-left'>{productType}</div>
+              <div className='category p-3 text-3xl font-extrabold text-left'>{productType}</div>
               <div className='Hdivider'></div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 py-2">
                 {(Products as any)[productType].map((item: Product, index: number) => (
