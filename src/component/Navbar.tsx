@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
         <nav className="flex flex-col md:flex-row items-center justify-between p-2 md:sticky -top-1 m-1 z-10 bg w-full drop-shadow-xl rounded-lg md:rounded-full ">
 
             <div className='flex gap-[30%]'>
-                <h1 className="md:text-5xl text-3xl font-bold pl-8">QuickCafe</h1>
+                <h1 className="md:text-5xl text-3xl font-bold pl-8">MyCafe</h1>
 
                 <span className='text-3xl md:hidden'
                     onClick={() => setShowMenu(!showMenu)}
